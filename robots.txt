@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kbu3986.github.io/sitemap-index.xml
+Sitemap: https://kbu3986.github.io/sitemap.xml
+Sitemap: https://kbu3986.github.io/wattcheck-global/sitemap.xml
+Sitemap: https://kbu3986.github.io/worthmove-global/sitemap.xml
+Sitemap: https://kbu3986.github.io/puregram-global/sitemap.xml
