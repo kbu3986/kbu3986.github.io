@@ -730,6 +730,7 @@ Sitemap: ${SITE_URL}/puregram-global/sitemap.xml
 
 // Clean & write out/
 fs.rmSync(OUT, { recursive: true, force: true });
+fs.mkdirSync(path.join(OUT, "en"), { recursive: true });
 fs.mkdirSync(path.join(OUT, "ko"), { recursive: true });
 fs.mkdirSync(path.join(OUT, "about"), { recursive: true });
 fs.mkdirSync(path.join(OUT, "privacy"), { recursive: true });
@@ -740,6 +741,9 @@ const aboutHtml = buildAboutPage();
 const privacyHtml = buildPrivacyPage();
 
 fs.writeFileSync(path.join(OUT, "index.html"), homeEn, "utf8");
+fs.writeFileSync(path.join(OUT, "en.html"), homeEn, "utf8");
+fs.writeFileSync(path.join(OUT, "en", "index.html"), homeEn, "utf8");
+fs.writeFileSync(path.join(OUT, "ko.html"), homeKo, "utf8");
 fs.writeFileSync(path.join(OUT, "ko", "index.html"), homeKo, "utf8");
 fs.writeFileSync(path.join(OUT, "about.html"), aboutHtml, "utf8");
 fs.writeFileSync(path.join(OUT, "about", "index.html"), aboutHtml, "utf8");
