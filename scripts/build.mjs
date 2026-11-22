@@ -318,6 +318,7 @@ function renderHeader(locale = "en") {
         <span>${isKo ? "실생활 계산기 & 데이터 인덱스" : "Precision Utility & Data Index"}</span>
       </a>
       <nav class="nav-links">
+        <a href="/specmatrix-global/${isKo ? "ko" : "en"}">SpecMatrix</a>
         <a href="/wattcheck-global/${isKo ? "ko" : "en"}">WattCheck</a>
         <a href="/worthmove-global/${isKo ? "ko" : "en"}">WorthMove</a>
         <a href="/puregram-global/${isKo ? "ko" : "en"}">PureGram</a>
@@ -368,6 +369,11 @@ function buildHomeEn() {
     hasPart: [
       {
         "@type": "WebApplication",
+        name: "SpecMatrix Global — Evidence-Anchored Product Spec Matrices (WattCheck · PureGram · CycleGear)",
+        url: `${SITE_URL}/specmatrix-global/en`,
+      },
+      {
+        "@type": "WebApplication",
         name: "WattCheck — Airline Power Bank Wh Rules & Device Charge Sizer",
         url: `${SITE_URL}/wattcheck-global/en`,
       },
@@ -401,14 +407,31 @@ function buildHomeEn() {
   ${renderHeader("en")}
   <main class="container">
     <section class="hero">
-      <span class="eyebrow">870+ Bilingual Engineering Guides & Interactive Calculators</span>
-      <h1>Transparent Math for Travel Safety, Career Decisions & Daily Nutrition</h1>
+      <span class="eyebrow">1,090+ Bilingual Engineering Guides, Spec Matrices & Interactive Calculators</span>
+      <h1>Transparent Math for Travel Safety, Career Decisions, Gear & Daily Nutrition</h1>
       <p>
-        Zero paywalls, zero sign-ups, and zero guesswork. Explore three specialized calculation engines audited against 2026 regulatory rules, tax brackets, and verified nutrition labels.
+        Zero paywalls, zero sign-ups, and zero guesswork. Explore four specialized calculation &amp; evidence-anchored comparison engines audited against 2026 regulatory rules, tax brackets, manufacturer spec sheets, and verified nutrition labels.
       </p>
     </section>
 
     <section class="grid" aria-label="Web Applications">
+      <article class="card" style="border-color:#93c5fd;">
+        <div>
+          <span class="tag tag-blue">NEW · Evidence-Anchored Lab · 200+ Pages</span>
+          <h2>SpecMatrix Global (스펙매트릭스)</h2>
+          <p>Model-by-model verified specification matrices, 1:1 weighted VS simulators, and live calculators spanning 60 audited SKUs across power banks/GaN, endurance gels &amp; road cycling gear.</p>
+          <ul class="feature-list">
+            <li><a href="/specmatrix-global/en/wattcheck/matrix/airlines-30">30-Airline Battery Rules &amp; USB-PD Multi-Port Matrix (25 SKUs)</a></li>
+            <li><a href="/specmatrix-global/en/puregram/matrix/energy-gels">Endurance Energy Gels &amp; Creatine True Cost per Active Gram (20 SKUs)</a></li>
+            <li><a href="/specmatrix-global/en/cyclegear/matrix/power-meters">Road Cycling Power Meters, GPS &amp; Hookless Tire Safety Matrix (15 SKUs)</a></li>
+          </ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/specmatrix-global/en">Open SpecMatrix (EN) →</a>
+          <a class="btn btn-secondary" href="/specmatrix-global/ko">한국어</a>
+        </div>
+      </article>
+
       <article class="card">
         <div>
           <span class="tag tag-blue">Aviation & Electronics · 190+ Guides</span>
@@ -493,14 +516,31 @@ function buildHomeKo() {
   ${renderHeader("ko")}
   <main class="container">
     <section class="hero">
-      <span class="eyebrow">870+ 한·영 정밀 계산기 & 데이터 가이드 수록</span>
-      <h1>출국 준비, 연봉·이직 결정, 영양제 반복 구매까지 숫자로 정확하게 검증하세요</h1>
+      <span class="eyebrow">1,090+ 한·영 정밀 계산기 · 실제품 스펙 매트릭스 수록</span>
+      <h1>출국 준비, 연봉·이직, 영양제, 로드사이클 기어까지 숫자로 정확하게 검증하세요</h1>
       <p>
-        회원가입 없이 브라우저에서 즉시 작동하는 3대 생활 밀착형 엔지니어링 계산기 컬렉션입니다. 2026년 최신 항공 안전 규정, 4대보험·근로소득세 요율, 영양성분표 데이터를 반영했습니다.
+        회원가입 없이 브라우저에서 즉시 작동하는 4대 생활·장비 엔지니어링 계산기 및 실데이터 비교 매트릭스 컬렉션입니다. 2026년 최신 항공 안전 규정, 세법·4대보험 요율, 공식 스펙시트와 영양성분표를 반영했습니다.
       </p>
     </section>
 
     <section class="grid" aria-label="서비스 목록">
+      <article class="card" style="border-color:#93c5fd;">
+        <div>
+          <span class="tag tag-blue">NEW · 실제품 스펙 검증 매트릭스 · 200+ 페이지</span>
+          <h2>스펙매트릭스 (SpecMatrix Global)</h2>
+          <p>공식 스펙시트·영양성분표·항공사 규정 원문에 고정된 60개 실제품 정밀 프로파일, 1:1 가중치 VS 시뮬레이터 및 버티컬 전용 인터랙티브 계산기를 제공합니다.</p>
+          <ul class="feature-list">
+            <li><a href="/specmatrix-global/ko/wattcheck/matrix/airlines-30">최신 GaN·보조배터리 25종 × 30개 항공사 국토부 2026 기내반입 매트릭스</a></li>
+            <li><a href="/specmatrix-global/ko/puregram/matrix/energy-gels">지구력 에너지젤·전해질·크레아틴 20종 순수 유효성분 실단가 계산기</a></li>
+            <li><a href="/specmatrix-global/ko/cyclegear/matrix/power-meters">로드사이클 파워미터·GPS·후크리스 타이어 15종 호환성·안전 매트릭스</a></li>
+          </ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/specmatrix-global/ko">스펙매트릭스 열기 (한국어) →</a>
+          <a class="btn btn-secondary" href="/specmatrix-global/en">EN</a>
+        </div>
+      </article>
+
       <article class="card">
         <div>
           <span class="tag tag-blue">항공·배터리 안전 · 190+ 가이드</span>
@@ -701,6 +741,13 @@ function buildSitemapIndexXml() {
     `${SITE_URL}/wattcheck-global/sitemap.xml`,
     `${SITE_URL}/worthmove-global/sitemap.xml`,
     `${SITE_URL}/puregram-global/sitemap.xml`,
+    `${SITE_URL}/specmatrix-global/sitemap-core.xml`,
+    `${SITE_URL}/specmatrix-global/sitemap-wattcheck-en.xml`,
+    `${SITE_URL}/specmatrix-global/sitemap-wattcheck-ko.xml`,
+    `${SITE_URL}/specmatrix-global/sitemap-puregram-en.xml`,
+    `${SITE_URL}/specmatrix-global/sitemap-puregram-ko.xml`,
+    `${SITE_URL}/specmatrix-global/sitemap-cyclegear-en.xml`,
+    `${SITE_URL}/specmatrix-global/sitemap-cyclegear-ko.xml`,
   ];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -725,6 +772,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
 Sitemap: ${SITE_URL}/wattcheck-global/sitemap.xml
 Sitemap: ${SITE_URL}/worthmove-global/sitemap.xml
 Sitemap: ${SITE_URL}/puregram-global/sitemap.xml
+Sitemap: ${SITE_URL}/specmatrix-global/sitemap-index.xml
 `;
 }
 
