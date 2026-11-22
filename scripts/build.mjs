@@ -369,6 +369,11 @@ function buildHomeEn() {
     hasPart: [
       {
         "@type": "WebApplication",
+        name: "Pin2Pin Global — Datasheet-Verified Semiconductor Pinout & Cross-Reference DB",
+        url: `${SITE_URL}/pin2pin-global/en/`,
+      },
+      {
+        "@type": "WebApplication",
         name: "SpecMatrix Global — Evidence-Anchored Product Spec Matrices (WattCheck · PureGram · CycleGear)",
         url: `${SITE_URL}/specmatrix-global/en`,
       },
@@ -407,7 +412,7 @@ function buildHomeEn() {
   ${renderHeader("en")}
   <main class="container">
     <section class="hero">
-      <span class="eyebrow">1,090+ Bilingual Engineering Guides, Spec Matrices & Interactive Calculators</span>
+      <span class="eyebrow">1,290+ Bilingual Engineering Guides, Spec Matrices &amp; IC Cross-Ref Tools</span>
       <h1>Transparent Math for Travel Safety, Career Decisions, Gear & Daily Nutrition</h1>
       <p>
         Zero paywalls, zero sign-ups, and zero guesswork. Explore four specialized calculation &amp; evidence-anchored comparison engines audited against 2026 regulatory rules, tax brackets, manufacturer spec sheets, and verified nutrition labels.
@@ -429,6 +434,22 @@ function buildHomeEn() {
         <div class="btn-row">
           <a class="btn btn-primary" href="/specmatrix-global/en">Open SpecMatrix (EN) →</a>
           <a class="btn btn-secondary" href="/specmatrix-global/ko">한국어</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="tag tag-emerald">B2B Electronics · 200+ Pages</span>
+          <h2>Pin2Pin Global (Semiconductor Cross-Ref)</h2>
+          <p>Official PDF datasheet &amp; 300 DPI pinout-verified replacement cross-reference covering 50 iconic LDOs, DC-DC buck/boost ICs, and op-amps with live thermal &amp; ripple calculators.</p>
+          <ul class="feature-list">
+            <li>85 head-to-head IC comparisons &amp; 50 drop-in alternative matrices</li>
+            <li>21 crisp SVG package pinouts (SOT-23, SOIC-8, TO-252, SOT-223)</li>
+            <li>Interactive LDO Thermal, DC-DC Ripple &amp; Op-Amp GBWP calculators</li>
+          </ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/pin2pin-global/en/">Open Pin2Pin (EN) →</a>
         </div>
       </article>
 
@@ -516,7 +537,7 @@ function buildHomeKo() {
   ${renderHeader("ko")}
   <main class="container">
     <section class="hero">
-      <span class="eyebrow">1,090+ 한·영 정밀 계산기 · 실제품 스펙 매트릭스 수록</span>
+      <span class="eyebrow">1,290+ 한·영 정밀 계산기 · 실제품 스펙 매트릭스 · 반도체 대체 DB 수록</span>
       <h1>출국 준비, 연봉·이직, 영양제, 로드사이클 기어까지 숫자로 정확하게 검증하세요</h1>
       <p>
         회원가입 없이 브라우저에서 즉시 작동하는 4대 생활·장비 엔지니어링 계산기 및 실데이터 비교 매트릭스 컬렉션입니다. 2026년 최신 항공 안전 규정, 세법·4대보험 요율, 공식 스펙시트와 영양성분표를 반영했습니다.
@@ -538,6 +559,22 @@ function buildHomeKo() {
         <div class="btn-row">
           <a class="btn btn-primary" href="/specmatrix-global/ko">스펙매트릭스 열기 (한국어) →</a>
           <a class="btn btn-secondary" href="/specmatrix-global/en">EN</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="tag tag-emerald">HW 엔지니어링 · 200+ 페이지 (EN)</span>
+          <h2>Pin2Pin Global (반도체 대체·핀아웃 DB)</h2>
+          <p>공식 제조사 PDF 데이터시트와 300 DPI 핀아웃 검증 기반 LDO·DC-DC·Op-Amp 50종 대체품 매트릭스 및 열·리플·GBWP 계산기를 제공합니다.</p>
+          <ul class="feature-list">
+            <li>85쌍 IC 1:1 비교 &amp; 50종 드롭인 대체품 매트릭스</li>
+            <li>SOT-23·SOIC-8·TO-252 등 21종 고해상도 패키지 핀아웃 SVG</li>
+            <li>LDO 열 설계 · DC-DC 리플 · Op-Amp GBWP 실시간 계산기</li>
+          </ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/pin2pin-global/en/">Pin2Pin 열기 (EN) →</a>
         </div>
       </article>
 
@@ -741,6 +778,7 @@ function buildSitemapIndexXml() {
     `${SITE_URL}/wattcheck-global/sitemap.xml`,
     `${SITE_URL}/worthmove-global/sitemap.xml`,
     `${SITE_URL}/puregram-global/sitemap.xml`,
+    `${SITE_URL}/pin2pin-global/sitemap.xml`,
     `${SITE_URL}/specmatrix-global/sitemap-core.xml`,
     `${SITE_URL}/specmatrix-global/sitemap-wattcheck-en.xml`,
     `${SITE_URL}/specmatrix-global/sitemap-wattcheck-ko.xml`,
@@ -772,6 +810,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
 Sitemap: ${SITE_URL}/wattcheck-global/sitemap.xml
 Sitemap: ${SITE_URL}/worthmove-global/sitemap.xml
 Sitemap: ${SITE_URL}/puregram-global/sitemap.xml
+Sitemap: ${SITE_URL}/pin2pin-global/sitemap.xml
 Sitemap: ${SITE_URL}/specmatrix-global/sitemap-index.xml
 `;
 }
@@ -801,6 +840,9 @@ fs.writeFileSync(path.join(OUT, "sitemap.xml"), buildSitemapXml(), "utf8");
 fs.writeFileSync(path.join(OUT, "sitemap-index.xml"), buildSitemapIndexXml(), "utf8");
 fs.writeFileSync(path.join(OUT, "robots.txt"), buildRobotsTxt(), "utf8");
 fs.writeFileSync(path.join(OUT, ".nojekyll"), "", "utf8");
+// IndexNow ownership key for instant Bing / Naver / Yandex / DuckDuckGo indexing
+const INDEXNOW_KEY = "8f4a7c2e9b1d4063a5e8f2c7b9d1046e";
+fs.writeFileSync(path.join(OUT, `${INDEXNOW_KEY}.txt`), INDEXNOW_KEY, "utf8");
 
 if (adsensePubId) {
   const adsTxt = `google.com, ${adsensePubId}, DIRECT, f08c47fec0942fa0\n`;
