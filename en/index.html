@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Precision Consumer Calculators &amp; Data Index — WattCheck, WorthMove &amp; PureGram</title>
+  <meta name="description" content="Free bilingual (English &amp; Korean) engineering calculators and consumer value indexes covering 2026 airline lithium battery Wh limits, after-tax true hourly wage &amp; RTO break-even math, and supplement cost per pure active gram." />
+  <link rel="canonical" href="https://kbu3986.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Precision Consumer Calculators &amp; Data Index — WattCheck, WorthMove &amp; PureGram" />
+  <meta property="og:description" content="Free bilingual (English &amp; Korean) engineering calculators and consumer value indexes covering 2026 airline lithium battery Wh limits, after-tax true hourly wage &amp; RTO break-even math, and supplement cost per pure active gram." />
+  <meta property="og:url" content="https://kbu3986.github.io/" />
+  <meta property="og:locale" content="en_US" />
+  <link rel="alternate" hreflang="en" href="https://kbu3986.github.io/" />
+  <link rel="alternate" hreflang="ko" href="https://kbu3986.github.io/ko/" />
+  <link rel="alternate" hreflang="x-default" href="https://kbu3986.github.io/" />
+  <meta name="google-site-verification" content="srNR80vNCy3sBgCrxGn_bZLwTPgwsvqmdTxF4arEhw4" />
+  <meta name="naver-site-verification" content="8c10763f9e41c812023c31dc42cce3517af9ad25" />
+  <meta name="google-adsense-account" content="ca-pub-8587506565277191" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8587506565277191" crossorigin="anonymous"></script>
+  <style>
+  :root {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #475569;
+    --border: #e2e8f0;
+    --accent: #2563eb;
+    --accent-dark: #1d4ed8;
+    --emerald: #059669;
+    --amber: #d97706;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Pretendard", "Malgun Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  header {
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    gap: 16px;
+  }
+  .brand {
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-badge {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 0.95rem;
+  }
+  .nav-links { display: flex; align-items: center; gap: 18px; font-size: 0.92rem; font-weight: 600; }
+  .nav-links a { color: var(--muted); }
+  .nav-links a:hover { color: var(--text); text-decoration: none; }
+  .lang-pill {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    background: #f1f5f9;
+    border-radius: 999px;
+    padding: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .lang-pill a {
+    padding: 4px 10px;
+    border-radius: 999px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .lang-pill a.active {
+    background: #ffffff;
+    color: var(--accent);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  }
+  .hero {
+    padding: 64px 0 42px;
+    text-align: center;
+  }
+  .eyebrow {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1e40af;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+  .hero h1 {
+    font-size: clamp(1.9rem, 4vw, 2.85rem);
+    font-weight: 850;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    max-width: 820px;
+    margin: 0 auto 16px;
+  }
+  .hero p {
+    color: var(--muted);
+    font-size: 1.08rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 24px;
+    margin: 24px 0 56px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.07);
+  }
+  .tag {
+    display: inline-block;
+    font-size: 0.73rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+  }
+  .tag-blue { background: #eff6ff; color: #1d4ed8; }
+  .tag-emerald { background: #ecfdf5; color: #047857; }
+  .tag-amber { background: #fffbeb; color: #b45309; }
+  .card h2 { font-size: 1.35rem; font-weight: 800; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 18px; }
+  .feature-list { list-style: none; margin-bottom: 22px; font-size: 0.88rem; color: #334155; }
+  .feature-list li { margin-bottom: 7px; padding-left: 18px; position: relative; }
+  .feature-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--emerald);
+    font-weight: 800;
+  }
+  .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none !important;
+    transition: background 0.15s ease;
+  }
+  .btn-primary { background: var(--text); color: #ffffff; flex: 1; }
+  .btn-primary:hover { background: #1e293b; }
+  .btn-secondary { background: #f1f5f9; color: #334155; border: 1px solid var(--border); }
+  .btn-secondary:hover { background: #e2e8f0; }
+  .info-section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 36px;
+    margin-bottom: 56px;
+  }
+  .info-section h2 { font-size: 1.5rem; margin-bottom: 14px; }
+  .info-section h3 { font-size: 1.12rem; margin: 22px 0 8px; }
+  .info-section p, .info-section li { color: var(--muted); font-size: 0.96rem; margin-bottom: 10px; }
+  .info-section ul { padding-left: 20px; margin-bottom: 12px; }
+  footer {
+    border-top: 1px solid var(--border);
+    background: #ffffff;
+    padding: 36px 0;
+    margin-top: 48px;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer-links { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 600; }
+</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Precision Utility & Consumer Data Index","url":"https://kbu3986.github.io/","inLanguage":["en","ko"],"hasPart":[{"@type":"WebApplication","name":"Pin2Pin Global — Datasheet-Verified Semiconductor Pinout & Cross-Reference DB","url":"https://kbu3986.github.io/pin2pin-global/en/"},{"@type":"WebApplication","name":"SpecMatrix Global — Evidence-Anchored Product Spec Matrices (WattCheck · PureGram · CycleGear)","url":"https://kbu3986.github.io/specmatrix-global/en"},{"@type":"WebApplication","name":"WattCheck — Airline Power Bank Wh Rules & Device Charge Sizer","url":"https://kbu3986.github.io/wattcheck-global/en"},{"@type":"WebApplication","name":"WorthMove — True Hourly Wage & RTO vs Remote Calculator","url":"https://kbu3986.github.io/worthmove-global/en"},{"@type":"WebApplication","name":"PureGram — Supplement Purity & Cost Per Active Gram Index","url":"https://kbu3986.github.io/puregram-global/en"}]}</script>
+</head>
+<body>
+  
+  <header>
+    <div class="container nav-bar">
+      <a href="/" class="brand">
+        <span class="brand-badge">SE</span>
+        <span>Precision Utility & Data Index</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/specmatrix-global/en">SpecMatrix</a>
+        <a href="/wattcheck-global/en">WattCheck</a>
+        <a href="/worthmove-global/en">WorthMove</a>
+        <a href="/puregram-global/en">PureGram</a>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <div class="lang-pill" aria-label="Language Switcher">
+          <a href="/" class="active">EN</a>
+          <a href="/ko/" class="">한국어</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">1,290+ Bilingual Engineering Guides, Spec Matrices &amp; IC Cross-Ref Tools</span>
+      <h1>Transparent Math for Travel Safety, Career Decisions, Gear & Daily Nutrition</h1>
+      <p>
+        Zero paywalls, zero sign-ups, and zero guesswork. Explore four specialized calculation &amp; evidence-anchored comparison engines audited against 2026 regulatory rules, tax brackets, manufacturer spec sheets, and verified nutrition labels.
+      </p>
+    </section>
+
+    <section class="grid" aria-label="Web Applications">
+      <article class="card" style="border-color:#93c5fd;">
+        <div>
+          <span class="tag tag-blue">NEW · Evidence-Anchored Lab · 200+ Pages</span>
+          <h2>SpecMatrix Global (스펙매트릭스)</h2>
+          <p>Model-by-model verified specification matrices, 1:1 weighted VS simulators, and live calculators spanning 60 audited SKUs across power banks/GaN, endurance gels &amp; road cycling gear.</p>
+          <ul class="feature-list">
+            <li><a href="/specmatrix-global/en/wattcheck/matrix/airlines-30">30-Airline Battery Rules &amp; USB-PD Multi-Port Matrix (25 SKUs)</a></li>
+            <li><a href="/specmatrix-global/en/puregram/matrix/energy-gels">Endurance Energy Gels &amp; Creatine True Cost per Active Gram (20 SKUs)</a></li>
+            <li><a href="/specmatrix-global/en/cyclegear/matrix/power-meters">Road Cycling Power Meters, GPS &amp; Hookless Tire Safety Matrix (15 SKUs)</a></li>
+          </ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/specmatrix-global/en">Open SpecMatrix (EN) →</a>
+          <a class="btn btn-secondary" href="/specmatrix-global/ko">한국어</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="tag tag-emerald">B2B Electronics · 200+ Pages</span>
+          <h2>Pin2Pin Global (Semiconductor Cross-Ref)</h2>
+          <p>Official PDF datasheet &amp; 300 DPI pinout-verified replacement cross-reference covering 50 iconic LDOs, DC-DC buck/boost ICs, and op-amps with live thermal &amp; ripple calculators.</p>
+          <ul class="feature-list">
+            <li>85 head-to-head IC comparisons &amp; 50 drop-in alternative matrices</li>
+            <li>21 crisp SVG package pinouts (SOT-23, SOIC-8, TO-252, SOT-223)</li>
+            <li>Interactive LDO Thermal, DC-DC Ripple &amp; Op-Amp GBWP calculators</li>
+          </ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/pin2pin-global/en/">Open Pin2Pin (EN) →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="tag tag-blue">Aviation & Electronics · 190+ Guides</span>
+          <h2>WattCheck (와트체크)</h2>
+          <p>Instant bidirectional mAh ↔ Wh ↔ kWh converter, 2026 airline carry-on lithium battery compliance checker, and real-world 82% DC-DC USB-C PD device charge estimator.</p>
+          <ul class="feature-list">
+            <li>30 global & Korean airline carry-on rules (TSA/FAA, Korean Air, Emirates, ANA)</li>
+            <li>40 smartphones, laptops, handheld consoles, drones & CPAP battery specs</li>
+            <li>2025–2026 Korea MOLIT zip-lock pouch & overhead bin safety checklist</li>
+          </ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/wattcheck-global/en">Open WattCheck (EN) →</a>
+          <a class="btn btn-secondary" href="/wattcheck-global/ko">한국어</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="tag tag-emerald">Personal Finance & Career · 326+ Guides</span>
+          <h2>WorthMove (이직손익판독기)</h2>
+          <p>Side-by-side True Hourly Wage & Return-to-Office (RTO) break-even calculator with progressive US/Global & 2026 Korean 4-major-insurance after-tax take-home engines.</p>
+          <ul class="feature-list">
+            <li>Computes net hourly pay after commute hours, transit/fuel drain & unpaid OT</li>
+            <li>Binary-search Break-Even Offer Solver + downloadable PNG thermal receipt</li>
+            <li>172 salary tables, 48 RTO showdowns & 36 major commuter corridor analyses</li>
+          </ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/worthmove-global/en">Open WorthMove (EN) →</a>
+          <a class="btn btn-secondary" href="/worthmove-global/ko">한국어</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="tag tag-amber">Health & Supplement Value · 342+ Guides</span>
+          <h2>PureGram (순수그램 가성비 사전)</h2>
+          <p>Filler-tax auditor & live sortable leaderboard ranking protein powders, creatine, omega-3 (pure EPA+DHA), and electrolytes strictly by verified cost per active gram.</p>
+          <ul class="feature-list">
+            <li>48 bestselling global & Korean supplements audited for active-ingredient purity %</li>
+            <li>228 head-to-head 1v1 comparison pages across 6 supplement categories</li>
+            <li>Omega-3 ranked by combined pure EPA+DHA mg—never raw fish oil weight</li>
+          </ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/puregram-global/en">Open PureGram (EN) →</a>
+          <a class="btn btn-secondary" href="/puregram-global/ko">한국어</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="info-section">
+      <h2>Why Independent Engineering Calculators Matter</h2>
+      <p>
+        Marketing labels routinely obscure the real numbers consumers need: power banks advertise mAh at 3.7V while airlines enforce Watt-hours (Wh) and voltage step-up consumes ~18% energy; job offers headline gross salary while ignoring 500+ annual hours lost to commuting; supplement tubs highlight total weight while hiding 20–45% non-active fillers.
+      </p>
+      <p>
+        Every tool hosted on this hub runs 100% client-side in your browser with open, inspectable formulas and full bilingual support in English and Korean. Read our <a href="/about.html">Methodology & Editorial Standards</a> or review our <a href="/privacy.html">Privacy & Cookie Policy</a>.
+      </p>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>Precision Web Calculators & Consumer Data Index</strong>
+        <p style="margin-top:4px;font-size:0.82rem;">
+          Engineering-verified calculators built on 2026 IATA/FAA aviation standards, statutory tax tables, and nutrition label audits.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="/">English Hub</a>
+        <a href="/ko/">한국어 허브</a>
+        <a href="/about.html">About & Methodology</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
