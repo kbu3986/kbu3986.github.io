@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://kbu3986.github.io/puregram-global/sitemap.xml

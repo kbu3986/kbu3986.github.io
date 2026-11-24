@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://kbu3986.github.io/wattcheck-global
+Sitemap: https://kbu3986.github.io/wattcheck-global/sitemap.xml
