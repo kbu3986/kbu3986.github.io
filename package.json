@@ -1,9 +1,22 @@
 {
-  "name": "site0-hub",
-  "version": "1.0.0",
+  "name": "kbu3986-unified-pages",
+  "version": "2.0.0",
   "private": true,
-  "description": "Root Utility Hub for kbu3986.github.io (AdSense ads.txt, GSC/Naver Verification, Bilingual Directory)",
+  "description": "Unified 4-site GitHub Pages monorepo for kbu3986.github.io (site0-hub, site1-wattcheck, site2-worthmove, site3-puregram)",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build:hub": "npm --prefix site0-hub run build",
+    "build:wattcheck": "npm --prefix site1-wattcheck run build",
+    "build:worthmove": "npm --prefix site2-worthmove run build",
+    "build:puregram": "npm --prefix site3-puregram run build",
+    "build:all": "powershell -ExecutionPolicy Bypass -File scripts/deploy-unified.ps1 -DryRun",
+    "lint:wattcheck": "npm --prefix site1-wattcheck run lint",
+    "lint:worthmove": "npm --prefix site2-worthmove run lint",
+    "lint:puregram": "npm --prefix site3-puregram run lint",
+    "update-prices:puregram": "npm --prefix site3-puregram run update-prices",
+    "deploy": "powershell -ExecutionPolicy Bypass -File scripts/deploy-unified.ps1",
+    "deploy:hub": "powershell -ExecutionPolicy Bypass -File scripts/deploy-unified.ps1 -Site hub",
+    "deploy:wattcheck": "powershell -ExecutionPolicy Bypass -File scripts/deploy-unified.ps1 -Site wattcheck",
+    "deploy:worthmove": "powershell -ExecutionPolicy Bypass -File scripts/deploy-unified.ps1 -Site worthmove",
+    "deploy:puregram": "powershell -ExecutionPolicy Bypass -File scripts/deploy-unified.ps1 -Site puregram"
   }
 }

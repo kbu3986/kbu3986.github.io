@@ -1,0 +1,9 @@
+{
+  "name": "site0-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Root Utility Hub for kbu3986.github.io (AdSense ads.txt, GSC/Naver Verification, Bilingual Directory)",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}
