@@ -2,50 +2,58 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://kbu3986.github.io/sitemap.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/wattcheck-global/sitemap.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/worthmove-global/sitemap.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/puregram-global/sitemap.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/pin2pin-global/sitemap.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/specmatrix-global/sitemap-core.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/specmatrix-global/sitemap-wattcheck-en.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/specmatrix-global/sitemap-wattcheck-ko.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/specmatrix-global/sitemap-puregram-en.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/specmatrix-global/sitemap-puregram-ko.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/specmatrix-global/sitemap-cyclegear-en.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://kbu3986.github.io/specmatrix-global/sitemap-cyclegear-ko.xml</loc>
-    <lastmod>2026-11-22T12:14:45.888Z</lastmod>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://kbu3986.github.io/specmatrix-global/sitemap-hometech-en.xml</loc>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://kbu3986.github.io/specmatrix-global/sitemap-hometech-ko.xml</loc>
+    <lastmod>2026-11-26T07:16:41.092Z</lastmod>
   </sitemap>
 </sitemapindex>
